@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecomerce</title>
+    <link rel="stylesheet" href="assets/tw/app.css">
+    <link rel="stylesheet" href="assets/fs/css/all.css">
+    <style>
+        #modal{
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-200">
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+            <a href="https://flowbite.com/" class="flex items-center">
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Sparta Com</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="md:w-[90%] w-[98%] w-full mx-auto my-5">
+        <header class="w-full md:h-[500px] bg-slate-50 md:rounded-lg md:overflow-hidden flex md:flex-nowrap flex-wrap">
+            <div class="md:w-1/2 w-full h-full flex flex-col justify-center p-8 md:order-1 order-2">
+                <h1 class="text-3xl font-bold my-2">Wujudkan Mimpi anda</h1>
+                <h1 class="text-3xl font-bold my-2">Cari apa yang anda perlukan</h1>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias sunt modi unde, non, blanditiis doloremque temporibus, eius eos debitis sint deleniti iste. Harum necessitatibus odio quibusdam accusamus, doloribus molestiae, dolor.
+            </div>
+            <div class="md:w-1/2 w-full h-full flex items-center justify-center p-8 md:order-2 order-1">
+                <img src="assets/img/header.png" alt="header" class="w-[200px] h-[200px] rounded-lg">
+            </div>
+        </header>
+        <section class="w-full my-2 bg-slate-50 rounded-lg">
+            <h3 class="p-4 font-serif font-bold">Products Category</h3>
+            <div class="w-full flex flex-wrap  space-x-2 p-5">
+                <div class="lg:w-[18%] md:w-[23%] w-[30%] p-2 my-2">
+                    <a href="product.html?category=smartphones">
+                        <img src="assets/img/hp.png" alt="logo" width="50px" height="50px" class="mx-auto block my-2">
+                        <p class="text-center text-sm">Handphone</p>
+                    </a>
+                </div>
+                <div class="lg:w-[18%] md:w-[23%] w-[30%] p-2 my-2">
+                    <a href="product.html?category=laptops">
+                        <img src="assets/img/laptop.png" alt="logo" width="50px" height="50px" class="mx-auto block my-2">
+                        <p class="text-center text-sm">Laptop</p>
+                    </a>
+                </div>
+                <div class="lg:w-[18%] md:w-[23%] w-[30%] p-2 my-2">
+                    <a href="product.html?category=furniture">
+                        <img src="assets/img/furniture.png" alt="logo" width="50px" height="50px" class="mx-auto block my-2">
+                        <p class="text-center text-sm">Furniture</p>
+                    </a>
+                </div>
+                <div class="lg:w-[18%] md:w-[23%] w-[30%] p-2 my-2">
+                    <a href="product.html?category=womens-dresses">
+                        <img src="assets/img/women-dress.jpg" alt="logo" width="50px" height="50px" class="mx-auto block my-2 rounded-full">
+                        <p class="text-center text-sm">Women Dress</p>
+                    </a>
+                </div>
+                <div class="lg:w-[18%] md:w-[23%] w-[30%] p-2 my-2">
+                    <a href="product.html?category=womens-shoes">
+                        <img src="assets/img/women-shoes.png" alt="logo" width="50px" height="50px" class="mx-auto block my-2">
+                        <p class="text-center text-sm">Women Shoes</p>
+                    </a>
+                </div>
+                <div class="lg:w-[18%] md:w-[23%] w-[30%] p-2 my-2">
+                    <a href="product.html?category=mens-shoes">
+                        <img src="assets/img/men-shoes.png" alt="logo" width="50px" height="50px" class="mx-auto block my-2">
+                        <p class="text-center text-sm">Mens Shoes</p>
+                    </a>
+                </div>
+                <div class="lg:w-[18%] md:w-[23%] w-[30%] p-2 my-2">
+                    <a href="product.html?category=mens-shirts">
+                        <img src="assets/img/men-shirt.png" alt="logo" width="50px" height="50px" class="mx-auto block my-2">
+                        <p class="text-center text-sm">Mens Shirt</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="w-full my-2 rounded-lg">
+            <h4 class="p-5">Top Produk</h4>
+            <div class="w-full flex flex-wrap justify-between" id="tops-content">
+                <div class="md:w-[23%] w-[49%] h-[300px] my-2 bg-slate-50 rounded-lg shadow"></div>
+                <div class="md:w-[23%] w-[49%] h-[300px] my-2 bg-slate-50 rounded-lg shadow"></div>
+                <div class="md:w-[23%] w-[49%] h-[300px] my-2 bg-slate-50 rounded-lg shadow"></div>
+                <div class="md:w-[23%] w-[49%] h-[300px] my-2 bg-slate-50 rounded-lg shadow"></div>
+            </div>
+        </section>
+        <section class="w-full my-5 bg-slate-50 rounded-lg flex md:flex-nowrap flex-wrap" id="about">
+             <div class="md:w-1/2 w-full p-8 flex flex-col justify-center">
+                 <h1 class="mb-2 font-bold text-2xl">Sparta Company</h1>
+                 <p class="text-sm font-sans">FlowCore adalah perusahaan di bidang jual-beli baik berbasis online maupun offline .Dapatkan pelayanan ekstra dari kami untuk kamu pelangan baru.</p>
+             </div>
+             <div class="md:w-1/2 w-full p-8 ">
+                 <ul class="h-full flex-col flex justify-center">
+                     <li class="flex items-center space-x-2 my-2"><img src="assets/img/product.png" width="30px" height="30px" class="mx-2"> <p class="text-sm">Temukan produk yand anda inginkan</p></li>
+
+                     <li class="flex items-center space-x-2 my-2"><img src="assets/img/price.png" width="30px" height="30px" class="mx-2"> <p class="text-sm">Dapatkan penawaran terbaik</p></li>
+
+                     <li class="flex items-center space-x-2 my-2"><img src="assets/img/search.png" width="30px" height="30px" class="mx-2"> <p class="text-sm">Kami membantu memwujudkan mimpi anda</p></li>
+                 </ul>
+             </div>
+        </section>
+        <footer class="w-full bg-slate-900 p-8 rounded-lg my-8 flex items-center ">
+            <ul class="text-white ">
+                <li class="my-1"><span class="fa-solid fa-location mx-2 text-sm"></span><small>Los Angeles</small></li>
+                <li class="my-1"><span class="fa-solid fa-envelope mx-2 text-sm"></span><a href="">Candrawirawan631@gmail.com</a></li>
+                <li class="my-1"><span class="fa-solid fa-phone mx-2 text-sm"></span><small>088232485848</small></li>
+            </ul>
+        </footer>
+    </main>
+    <!-- modal -->
+    <div class="w-full fixed z-[50] top-0 left-0 right-0 bottom-0 bg-[rgba(0,0,0,0.5)]" id="modal">
+        <div class="md:w-[55%] mx-auto my-5 w-[90%]  rounded-lg bg-slate-50">
+            <div class="w-full p-3"><button type="button" id="close-modal"><span class="fa-solid fa-close"></span></button></div>
+            <div class="w-full p-5" id="modal-body">
+            <p class="my-3 mx-5">Loading......</p>
+                
+            </div>
+        </div>
+    </div>
+    <script src="assets/tw/app.js"></script>
+    <script src="assets/tw/flowbite.js"></script>
+</body>
+
+</html>
