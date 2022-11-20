@@ -48,7 +48,7 @@
     }
      html = `
          <img src="${data.images[0]}"  width="200px" height="100px" class="mx-auto my-2 block" id="parent-image">
-         <div class="flex space-x-8 flex-wrap my-2">${img}</div>
+         <div class="flex space-x-2 flex-wrap my-2">${img}</div>
         <p class="my-2 text-sm capitalize">${data.title}</p>
         <p class="my-2 text-sm capitalize">Price $ ${data.price}</p>
         <p class="my-2 text-sm capitalize">Brand ${data.brand}</p>
